@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/media/ihashib/New Volume/Work/CC++/dsi_solve'
+g++ -std=c++17 -Wall   -c -o src/main.o src/main.cpp
+g++ -std=c++17 -Wall   -c -o classes/src/file.o classes/src/file.cpp
+g++ -std=c++17 -Wall   -c -o classes/src/instruction_parser.o classes/src/instruction_parser.cpp
+g++ -std=c++17 -Wall   -c -o classes/src/riscv_inst.o classes/src/riscv_inst.cpp
+g++ src/main.o classes/src/file.o classes/src/instruction_parser.o classes/src/riscv_inst.o -o riscv_instruction_parser
+make: Leaving directory '/media/ihashib/New Volume/Work/CC++/dsi_solve'
+ 
